@@ -21,3 +21,6 @@ mermaid:
 collections:
   album:
     output: true
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
