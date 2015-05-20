@@ -1,17 +1,76 @@
 ---
 layout: portfolio
-categories: [portfolio, tritech]
+category: portfolio
 ---
+
+Nemesys
+-------
+
+1992 - 2002
+
+[Nemesys](http://nemesys.co.jp) is developing software company by 2D/3D computer graphics.
+
+They started to sell their own painting software on workstations, Neozoic at the first. They also helped to develop a custom 3D modeling by semi-meta objects software with Polygon pictures. They released their application by their knowledge of computer graphics to the many computer software sceanes.
+
+####[a fabric cutting layout software for Toray on SGI/IRIS](/portfolio/nemesys/nemesys_08.html)####
+
+####[a plugin software for painting simulation of cars in Maya on SGI/IRIS](/portfolio/nemesys/nemesys_07.html)####
+
+####[a plugin software for manupilating skeletons as a human in 3D-Max on SGI/IRIS](/portfolio/nemesys/nemesys_06.html)####
+
+####[a GUI of DVD authoring software on Windows](/portfolio/nemesys/nemesys_05.html)####
+
+####[a custom 3D modeling software by semi-meta objects for Polygon pictures on SGI/IRIS](/portfolio/nemesys/nemesys_04.html)####
+
+####[a glasses shop software for customizing glasses on NEC/EWS4800](/portfolio/nemesys/nemesys_03.html)####
+
+####[a custom paint software for a TV station equipment on SONY/NEWS](/portoflio/nemesys/nemesys_02.html)####
+
+####[Neozoic paint on SGI/IRIS](/portfolio/nemesys/nemesys_01.html)####
+
+----
+
+Computer Creators
+-----------------
+
+1988 - 1992
+
+[Computer Creators](http://www.c-creators.co.jp) were started from 2 young people as nowaday's start-up. It was placed on Suginami Tokyo so many years. Now, it is existed in Nagoya by 1 person.
+
+This company mainly takes research and development as a job. They got consultant from customers and realized their idea into actual.
+
+The intresting project was a ISDN modem for Macintosh, named TimeLiner which was developed by this single company as their own project. And, then sold it to public as actual commercial product.
+
+They made many peripherals for several platforms. ex. Laser printe I/F for SUN3/4 for ASCII Corp. as hardware R&D, software R&D were a window syste for DTP on SPARDStation, a JPEG compression software using DSP for Mitsubishi corp., a renderer from 3D geometric data using OpenGL, a camera apps, TrigonScope and SFX Camera of iPhone Apps,
+
+####[a PCB BOM management software on emacs](/portfolio/c-creators/c-creators_05.html)####
+
+####[a 3D wireframe study on SUN3/Sunview](/portfolio/c-creators/c-creators_04.html)####
+
+####[the device driver for CD-ROM I/F board on PS/2 for CHINON K.K.](/portfolio/c-creators/c-creators_03.html)####
+
+####[the device driver for CD-ROM I/F board on PC-DOS for CHINON K.K.](/portfolio/c-creators/c-creators_02.html)####
+
+####[a custom built 3D computer graphics on PC-Compatible with Transputer](/portfolio/c-creators/c-creators_01.html)####
+
+----
 
 Tritech
 -------
 
 1985 - 1988
 
-The president spined out from Accuphase as formaly the big name of high-class audio system company in Japan. He wanted to have freedom of running his company and don't hesitated to have any job he didn't experienced on Accuphase. So, their tasks were so much variety such mass production of 100 of PCBs by own solder reflow, developping high acculate computerized timer for a TV station, Developping remote controling a road roller, Developping and manufacturing multi frequency generater for LEADER K.K. as industrial mesurement equipment manufacturer, e.t.c.
+This company was founded by 3 people and moved several place such Shibuya, Setagaya and Machida for getting bigger number of employee. And, it then closed around 1990s.
 
-Based on the above, I larned the most of knowledges about developping computer devices along their senior engineers.
+They were inventing a rom emulater, named ROMulater for reducing time of debugging their firmware instead of using EPROM avoiding using a UV eraser which was had a battery backed up Static-RAM, programmed by EPROM burner, used as a typical EPROM on circuits and sold in Akihabara and mail-order. When releasing into public in soon after, it was succeeded, but soon later, people copied and order was got reduced.
 
+So, ROMulater was just one of their project. The company mainly did ODM. For example, developping high acculate computerized timer for a TV station, Developping semi-automatic remote controling a road roller, Developping and manufacturing multi frequency generater for LEADER K.K. as industrial mesurement equipment manufacturer, e.t.c.
+
+As well as ODM companies, a project starts from researching, designing, making BOM, mass production, testing, releaseing and maintaining. This company did them as one-stop for the customers.
+
+Based on the above, I larned the most of knowledges about developping and manufacturing computer devices along their senior engineers.
+
+####[audio digital filters of fisibility study for SEGA Corp.](/portfolio/tritech/tritech_04.html)####
 
 ####[a NTSC I/F for plasma panel display of DIXY Corp](/portfolio/tritech/tritech_03.html)####
 
