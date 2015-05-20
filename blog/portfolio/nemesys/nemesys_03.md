@@ -3,16 +3,14 @@ layout: portfolio
 categories: [portfolio, nemesys]
 ---
 
-- ####Neozoic paint on SGI/IRIS####
+####a glasses shop software for customizing glasses on NEC/EWS4800####
 
   **Tasks**
-  : Maintaining the 3D computer graphics system(Ray tracing)
-  : Adding few functionality such as saveing and loading system settings
+  : Adding a one functionality for Japanese input
 
   **Development Environment**
 
-  - PC-DOS(no brand PC-Compatible:PC/AT)
-  - Occam2 as the programming language for Transputer
-  - Transputer calculation accelarater board(4 transputers were mounted), INMOS Company
-  - a computer controlled TV station grade video recorder(3/4" u-matic)
-  - an external custom built 16 transputers rendering engine with a frame buffer for output
+  - EWS-OS(NEC EWS4800)
+  - EWS-OS C Language
+  - Motif GUI API
+  - X lib

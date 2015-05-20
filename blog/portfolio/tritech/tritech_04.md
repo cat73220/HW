@@ -3,7 +3,7 @@ layout: portfolio
 categories: [portfolio, tritech]
 ---
 
-- ####audio digital filters of fisibility study for SEGA Corp.####
+####audio digital filters of fisibility study for SEGA Corp.####
 
   **Tasks**
   : Designing the PCB circuit.

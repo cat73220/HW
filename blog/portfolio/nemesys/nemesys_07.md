@@ -3,16 +3,12 @@ layout: portfolio
 categories: [portfolio, nemesys]
 ---
 
-- ####Neozoic paint on SGI/IRIS####
+####a plugin software for manupilating skeletons as a human in 3D-Max on SGI/IRIS####
 
   **Tasks**
-  : Maintaining the 3D computer graphics system(Ray tracing)
-  : Adding few functionality such as saveing and loading system settings
+  : Designing and programming the plugin
 
   **Development Environment**
 
-  - PC-DOS(no brand PC-Compatible:PC/AT)
-  - Occam2 as the programming language for Transputer
-  - Transputer calculation accelarater board(4 transputers were mounted), INMOS Company
-  - a computer controlled TV station grade video recorder(3/4" u-matic)
-  - an external custom built 16 transputers rendering engine with a frame buffer for output
+  - 3D-Max(SGI/IRIS)
+  - 3D-Max plugin language

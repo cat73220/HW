@@ -3,7 +3,7 @@ layout: portfolio
 categories: [portfolio, tritech]
 ---
 
-- ####a custom multi-peripheral board for early laundry shop POS of K.K. BIC####
+####a custom multi-peripheral board for early laundry shop POS of K.K. BIC####
 
    **Tasks**
    : Designning the PCB circuit without CAD software because they were not available at this time.

@@ -3,15 +3,14 @@ layout: portfolio
 categories: [portfolio, nemesys]
 ---
 
-####[a GUI of DVD authoring software on Windows####
+####a fabric cutting layout software for Toray on SGI/IRIS####
 
   **Tasks**
   : Designing and programming this software
 
   **Development Environment**
 
-  - Windows NT(any PC-Compatibles)
-  - Microsoft C++
-  - Win32 API
-  - OLE
+  - IRIX(SGI IRIS)
+  - SGI C/C++ language
+  - Motif GUI API
   - OpenGL

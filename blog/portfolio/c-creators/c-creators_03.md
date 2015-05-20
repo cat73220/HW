@@ -3,7 +3,7 @@ layout: portfolio
 categories: [portfolio, c-creators]
 ---
 
-- ####the device driver for CD-ROM I/F board on PS/2 for CHINON K.K.####
+####the device driver for CD-ROM I/F board on PS/2 for CHINON K.K.####
 
   **Tasks**
   : Designing the device driver software, programming and maintainning

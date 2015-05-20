@@ -3,7 +3,7 @@ layout: portfolio
 categories: [portfolio, tritech]
 ---
 
-- ####a test jig for analog VHF/UHF tuner television set of Korean manufacturer####
+####a test jig for analog VHF/UHF tuner television set of Korean manufacturer####
 
   **Tasks**
   : Designning and programming controling software of the jig by Z80 assembler.

@@ -12,11 +12,13 @@ Nemesys
 
 They started to sell their own painting software on workstations, Neozoic at the first. They also helped to develop a custom 3D modeling by semi-meta objects software with Polygon pictures. They released their application by their knowledge of computer graphics to the many computer software sceanes.
 
-####[a fabric cutting layout software for Toray on SGI/IRIS](/portfolio/nemesys/nemesys_08.html)####
+####[a fabric cutting layout software for Toray on SGI/IRIS](/portfolio/nemesys/nemesys_09.html)####
 
-####[a plugin software for painting simulation of cars in Maya on SGI/IRIS](/portfolio/nemesys/nemesys_07.html)####
+####[a plugin software for painting simulation of cars in Maya on SGI/IRIS](/portfolio/nemesys/nemesys_08.html)####
 
-####[a plugin software for manupilating skeletons as a human in 3D-Max on SGI/IRIS](/portfolio/nemesys/nemesys_06.html)####
+####[a plugin software for manupilating skeletons as a human in 3D-Max on SGI/IRIS](/portfolio/nemesys/nemesys_07.html)####
+
+####[a cgi of decorated recycable one-time film camera on Netscape Navigator](/portfolio/nemesys/nemesys_06.html)####
 
 ####[a GUI of DVD authoring software on Windows](/portfolio/nemesys/nemesys_05.html)####
 
@@ -24,7 +26,7 @@ They started to sell their own painting software on workstations, Neozoic at the
 
 ####[a glasses shop software for customizing glasses on NEC/EWS4800](/portfolio/nemesys/nemesys_03.html)####
 
-####[a custom paint software for a TV station equipment on SONY/NEWS](/portoflio/nemesys/nemesys_02.html)####
+####[a custom paint software for a TV station equipment on SONY/NEWS](/portfolio/nemesys/nemesys_02.html)####
 
 ####[Neozoic paint on SGI/IRIS](/portfolio/nemesys/nemesys_01.html)####
 

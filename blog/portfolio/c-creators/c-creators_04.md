@@ -3,7 +3,7 @@ layout: portfolio
 categories: [portfolio, c-creators]
 ---
 
-- ####a 3D wireframe study on SUN3/Sunview####
+####a 3D wireframe study on SUN3/Sunview####
 
   **Tasks**
   : Understanding the vectors and matricies mathematica

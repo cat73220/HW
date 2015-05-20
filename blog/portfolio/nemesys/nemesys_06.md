@@ -3,16 +3,16 @@ layout: portfolio
 categories: [portfolio, nemesys]
 ---
 
-- ####Neozoic paint on SGI/IRIS####
+####a cgi of decorated recycable one-time film camera on Netscape Navigator####
 
   **Tasks**
-  : Maintaining the 3D computer graphics system(Ray tracing)
-  : Adding few functionality such as saveing and loading system settings
+  : Developing and programming this cgi
 
   **Development Environment**
 
-  - PC-DOS(no brand PC-Compatible:PC/AT)
-  - Occam2 as the programming language for Transputer
-  - Transputer calculation accelarater board(4 transputers were mounted), INMOS Company
-  - a computer controlled TV station grade video recorder(3/4" u-matic)
-  - an external custom built 16 transputers rendering engine with a frame buffer for output
+  - Netscape Navigator on Windows
+  - Windows NT(nay PC-Compatibles)
+  - NAPI Plugin
+  - Microsoft C++
+  - OLE
+  - OpenGL

@@ -1,9 +1,9 @@
 ---
 layout: portfolio
-categories: [portfolio, c-creators]
+categories: [portfolio, nemesys]
 ---
 
-####a custom built 3D computer graphics on PC-Compatible with Transputer####
+####Neozoic paint on SGI/IRIS####
 
   **Tasks**
   : Maintaining the 3D computer graphics system(Ray tracing)

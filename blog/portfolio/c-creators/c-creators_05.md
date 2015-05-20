@@ -3,7 +3,7 @@ layout: portfolio
 categories: [portfolio, c-creators]
 ---
 
-- ####a PCB BOM management software on emacs####
+####a PCB BOM management software on emacs####
 
   **Tasks**
   : Understanding lisp

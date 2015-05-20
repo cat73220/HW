@@ -3,7 +3,7 @@ layout: portfolio
 categories: [portfolio, tritech]
 ---
 
-- ####a NTSC I/F for plasma panel display of DIXY Corp.####
+####a NTSC I/F for plasma panel display of DIXY Corp.####
 
   **Tasks**
   : Designing the digital part of the PCB circuit.
