@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-categories: [portfolio, tritech]
+categories: [resume, tritech]
 ---
 
 ####audio digital filters of fisibility study for SEGA Corp.####

@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-categories: [portfolio, tritech]
+categories: [resume, tritech]
 ---
 
 ####a NTSC I/F for plasma panel display of DIXY Corp.####

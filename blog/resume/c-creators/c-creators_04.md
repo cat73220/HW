@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-categories: [portfolio, c-creators]
+categories: [resume, c-creators]
 ---
 
 ####a 3D wireframe study on SUN3/Sunview####

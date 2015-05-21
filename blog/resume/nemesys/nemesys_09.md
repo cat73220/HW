@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-categories: [portfolio, nemesys]
+categories: [resume, nemesys]
 ---
 
 ####a fabric cutting layout software for Toray on SGI/IRIS####

@@ -24,3 +24,6 @@ collections:
   portfolio:
     output: true
     permalink: /portfolio/:path/
+  resume:
+    output: true
+    permalink: /resume/:path/

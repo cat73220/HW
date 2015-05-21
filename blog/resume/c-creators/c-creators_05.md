@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-categories: [portfolio, c-creators]
+categories: [resume, c-creators]
 ---
 
 ####a PCB BOM management software on emacs####

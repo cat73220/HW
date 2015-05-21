@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-categories: [portfolio, c-creators]
+categories: [resume, c-creators]
 ---
 
 ####the device driver for CD-ROM I/F board on PS/2 for CHINON K.K.####

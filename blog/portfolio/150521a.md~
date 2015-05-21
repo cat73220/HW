@@ -1,0 +1,11 @@
+---
+layout: portfolio
+categories: [portfolio]
+---
+
+- ROMulator adapter
+-- z80 + ROMulater board
+-- in-circut emulator like device
+-- it added on ROMulator with z80 and with wire for z80 socket
+-- ROMulator eraser
+-- z80 reset circuit

@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-categories: [portfolio, tritech]
+categories: [resume, tritech]
 ---
 
 ####a test jig for analog VHF/UHF tuner television set of Korean manufacturer####

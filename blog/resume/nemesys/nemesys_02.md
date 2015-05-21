@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-categories: [portfolio, nemesys]
+categories: [resume, nemesys]
 ---
 
 ####a custom paint software for a TV station equipment on SONY/NEWS####

@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-categories: [portfolio, nemesys]
+categories: [resume, nemesys]
 ---
 
 ####[a GUI of DVD authoring software on Windows####

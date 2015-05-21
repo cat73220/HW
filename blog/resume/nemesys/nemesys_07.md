@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-categories: [portfolio, nemesys]
+categories: [resume, nemesys]
 ---
 
 ####a plugin software for manupilating skeletons as a human in 3D-Max on SGI/IRIS####

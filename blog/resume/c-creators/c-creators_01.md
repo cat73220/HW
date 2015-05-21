@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-categories: [portfolio, c-creators]
+categories: [resume, c-creators]
 ---
 
 ####a custom built 3D computer graphics on PC-Compatible with Transputer####

@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-categories: [portfolio, nemesys]
+categories: [resume, nemesys]
 ---
 
 ####a glasses shop software for customizing glasses on NEC/EWS4800####

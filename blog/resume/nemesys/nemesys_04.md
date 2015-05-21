@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-categories: [portfolio, nemesys]
+categories: [resume, nemesys]
 ---
 
 ####a custom 3D modeling software by semi-meta objects for Polygon pictures on SGI/IRIS####

@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-categories: [portfolio, tritech]
+categories: [resume, tritech]
 ---
 
 ####a custom multi-peripheral board for early laundry shop POS of K.K. BIC####
