@@ -21,8 +21,20 @@ nodesets = doc.css('tr')
 
 nodesets.each do |nodeset|
   next if nodeset.nil?
-  trset = Nokogiri::HTML.parse(nodeset.inner_html, nil, "utf-8")
-  tdset = trset.css('td')
+  tblset = Nokogiri::HTML.parse(nodeset.inner_html, nil, "utf-8")
+
+  thset = tblset.css('th')
+  if thset.size > 0
+    i = 0
+    thset.each do |th|
+      next if th.nil?
+      print i, ":[", th.text, "],"
+      i = i + 1
+    end
+    puts "\n"
+  end
+
+  tdset = tblset.css('td')
   next if tdset.size <= 0
   i = 0
   tdset.each do |td|
