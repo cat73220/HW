@@ -22,11 +22,14 @@ nodesets = doc.css('tr')
 nodesets.each do |nodeset|
   next if nodeset.nil?
   trset = Nokogiri::HTML.parse(nodeset.inner_html, nil, "utf-8")
-  tdset =trset.css('td')
+  tdset = trset.css('td')
   next if tdset.size <= 0
+  i = 0
   tdset.each do |td|
     next if td.nil?
-    print td.text, ","
+    print i, ":[", td.text, "],"
+    i = i + 1
   end
   puts "\n"
 end
+
