@@ -20,6 +20,13 @@ doc = Nokogiri::HTML.parse(rawpage, nil, "utf-8")
 nodesets = doc.css('tr')
 
 nodesets.each do |nodeset|
-p 'text['+nodeset.text.chomp+']'
-p 'innter_text['+nodeset.inner_text.chomp+']'
+  next if nodeset.nil?
+  trset = Nokogiri::HTML.parse(nodeset.inner_html, nil, "utf-8")
+  tdset =trset.css('td')
+  next if tdset.size <= 0
+  tdset.each do |td|
+    next if td.nil?
+    print td.text, ","
+  end
+  puts "\n"
 end
