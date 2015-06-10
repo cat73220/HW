@@ -13,8 +13,13 @@ require 'open-uri'
 require 'nokogiri'
 
 uri = "http://www.bookservice.jp/layout/bs/common/html/schedule/comic_top.html"
-rawpage = URI.parse(uri).read
+rawpage = open(uri)
 
-page = Nokogiri::HTML(rawpage,uri, "utf-8");
+doc = Nokogiri::HTML.parse(rawpage, nil, "utf-8")
 
-p page
+nodesets = doc.css('tr')
+
+nodesets.each do |nodeset|
+p 'text['+nodeset.text.chomp+']'
+p 'innter_text['+nodeset.inner_text.chomp+']'
+end
