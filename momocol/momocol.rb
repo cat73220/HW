@@ -18,6 +18,11 @@ json = open("candidates.json", "r:utf-8").read
 candidates_json = JSON.parse(json)
 
 uri = "http://www.bookservice.jp/layout/bs/common/html/schedule/comic_top.html"
+
+ARGV.each { |opt|
+  uri = opt if /^http:\/\/.*/ =~ opt
+}
+
 rawpage = open(uri)
 
 doc = Nokogiri::HTML.parse(rawpage, nil, "utf-8")
@@ -35,15 +40,16 @@ nodesets.each do |nodeset|
     thset.each do |th|
       next if th.nil?
       candidates_json[ns_i].each do |candidate|
+        #puts "#{th.text}:#{candidate}"
         if candidate[0] == th.text
           candidates[ns_i].push i => candidate[1]
         end
       end
-      print i, ":[", th.text, "],"
+      #print i, ":[", th.text, "],"
       i = i + 1
     end
-    puts "\n"
-    p candidates[ns_i]
+    #puts "\n"
+    #p candidates[ns_i]
     ns_i = ns_i + 1
   end
 
@@ -67,7 +73,7 @@ nodesets.each do |nodeset|
       next if tdset[k].nil?
       #puts "tdset[#{k}].text=#{tdset[k].text} : v=#{v} ?=#{(/#{v}/ =~ tdset[k].text).nil?}"
       next if (tdset[k].text =~ /#{v}/).nil?
-      puts ">>>>>> #{tdset[1].text} #{tdset[3].text} #{tdset[4].text} <<<<<<<<"
+      puts "#{tdset[1].text} #{tdset[3].text} #{tdset[4].text}"
     end
   end
 
