@@ -1,6 +1,6 @@
 # Site settings
 title: Jumly integration
-email: nabe@logvox.jp
+email: nabe1112@mail.goo.ne.jp
 description: > # this means to ignore newlines until "baseurl:"
   Attempting jumly.js integration into jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog/
