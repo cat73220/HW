@@ -9,12 +9,12 @@
 # for opening URL
 require 'open-uri'
 
-page = open("http://www.bookservice.jp/layout/bs/common/html/schedule/comic_top.html", "r:utf-8").read
+# for parsing HTML
+require 'nokogiri'
 
-page.each_line { |line|
-  line.chomp!
-  p line
-}
+uri = "http://www.bookservice.jp/layout/bs/common/html/schedule/comic_top.html"
+rawpage = URI.parse(uri).read
 
+page = Nokogiri::HTML(rawpage,uri, "utf-8");
 
-
+p page
