@@ -24,4 +24,17 @@
     bottom: 0;
     content: counter(print_page_count) "ページ";
 }
+
+.print_1page {
+    width: 172mm;
+    height: 251mm;
+    page-break-after: always;
+    position: relative;
+    counter-increment: print_page_count;
+}
+
+.print_1page:last-child {
+    page-break-after: auto;
+}
+
 }
