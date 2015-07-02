@@ -1,0 +1,27 @@
+@media print {
+.print_page {
+    width: 172mm;
+    height: 251mm;
+    page-break-after: always;
+    position: relative;
+    counter-increment: print_page_count;
+}
+
+.print_page:last-child {
+    page-break-after: auto;
+}
+
+.print_page:before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "Asial CSS Print Demo";
+}
+
+.print_page:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: counter(print_page_count) "ページ";
+}
+}
