@@ -1,0 +1,36 @@
+RubyGems Environment:
+  - RUBYGEMS VERSION: 2.4.6
+  - RUBY VERSION: 2.2.2 (2015-04-13 patchlevel 95) [x86_64-linux-gnu]
+  - INSTALLATION DIRECTORY: /var/lib/gems/2.2.0
+  - RUBY EXECUTABLE: /usr/bin/ruby2.2
+  - EXECUTABLE DIRECTORY: /usr/local/bin
+  - SPEC CACHE DIRECTORY: /home/watanabe/.gem/specs
+  - SYSTEM CONFIGURATION DIRECTORY: /etc
+  - RUBYGEMS PLATFORMS:
+    - ruby
+    - x86_64-linux
+  - GEM PATHS:
+     - /var/lib/gems/2.2.0
+     - /home/watanabe/.gem/ruby/2.2.0
+     - /usr/share/rubygems-integration/2.2.0
+     - /usr/share/rubygems-integration/all
+  - GEM CONFIGURATION:
+     - :update_sources => true
+     - :verbose => true
+     - :backtrace => false
+     - :bulk_threshold => 1000
+  - REMOTE SOURCES:
+     - https://rubygems.org/
+  - SHELL PATH:
+     - /home/watanabe/gcc-arm-none-eabi-4_8-2014q2/bin
+     - /home/watanabe/gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux/bin
+     - /home/watanabe/Sourcery2013-11/bin
+     - /home/watanabe/bin
+     - /usr/local/sbin
+     - /usr/local/bin
+     - /usr/sbin
+     - /usr/bin
+     - /sbin
+     - /bin
+     - /usr/games
+     - /usr/local/games
