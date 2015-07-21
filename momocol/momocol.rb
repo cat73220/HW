@@ -41,7 +41,7 @@ nodesets.each do |nodeset|
       next if th.nil?
       candidates_json[ns_i].each do |candidate|
         #puts "#{th.text}:#{candidate}"
-        if candidate[0] == th.text
+        if candidate[0] == th.text.strip
           candidates[ns_i].push i => candidate[1]
         end
       end
@@ -60,22 +60,26 @@ nodesets.each do |nodeset|
   i = 0
   tdset.each do |td|
     next if td.nil?
-    print i, ":[", td.text, "],"
+    print i, ":[", td.text.strip, "],"
     i = i + 1
   end
   puts "\n"
 =end
 
+=begin
+=end
   candidates[ns_i-1].each do |candidate|
     #puts "c=#{candidate} vs td=#{tdset.text}"
     candidate.each_pair do |k, v|
       #puts "key=#{k} value=#{v}"
       next if tdset[k].nil?
       #puts "tdset[#{k}].text=#{tdset[k].text} : v=#{v} ?=#{(/#{v}/ =~ tdset[k].text).nil?}"
-      next if (tdset[k].text =~ /#{v}/).nil?
-      puts "#{tdset[1].text} #{tdset[3].text} #{tdset[4].text}"
+      next if (tdset[k].text.strip =~ /#{v}/).nil?
+      puts "#{tdset[1].text.strip} #{tdset[3].text.strip} #{tdset[4].text.strip}"
     end
   end
+=begin
+=end
 
 end
 
