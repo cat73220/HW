@@ -98,6 +98,7 @@ def for_a_month( uri )
 end
 
 if !$search_from_past
+  puts "#{Date.today.year}"
   for_a_month(uri)
   exit
 end
