@@ -38,6 +38,7 @@ def for_a_month( uri )
 
   nodesets = doc.css('tr')
   candidates = [[],[]]
+  entry = []
   ns_i = 0
   nodesets.each do |nodeset|
     next if nodeset.nil?
@@ -84,7 +85,9 @@ def for_a_month( uri )
         next if tdset[k].nil?
         #puts "tdset[#{k}].text=#{tdset[k].text} : v=#{v} ?=#{(/#{v}/ =~ tdset[k].text).nil?}"
         next if (tdset[k].text.strip =~ /#{v}/).nil?
+        next if entry.include? tdset[3].text.strip
         puts "#{tdset[1].text.strip} #{tdset[3].text.strip} #{tdset[4].text.strip}"
+        entry.push tdset[3].text.strip
       end
     end
 =begin
