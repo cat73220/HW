@@ -14,6 +14,13 @@ require 'nokogiri'
 # for parsing the candidates list
 require 'json'
 
+# memory profiler
+require 'memprof2'
+
+=begin
+Memprof2.start
+=end
+
 json = open("candidates.json", "r:utf-8").read
 $candidates_json = JSON.parse(json)
 $search_from_past = false
@@ -56,11 +63,11 @@ def for_a_month( uri )
           end
         end
         #print i, ":[", th.text, "],"
-        i = i + 1
+        i += 1
       end
       #puts "\n"
       #p candidates[ns_i]
-      ns_i = ns_i + 1
+      ns_i += 1
     end
 
     tdset = tblset.css('td')
@@ -104,6 +111,14 @@ if !$search_from_past
   rescue
     puts sprintf "%02d/ -- Error {%s} --\n", Date.today.month, $!
   end
+
+=begin
+  Memprof2.report
+  Memprof2.stop
+
+  rss = `ps -o rss= #{Process.pid}`.to_i
+  puts "rss = #{rss}"
+=end
   exit
 end
 
@@ -129,7 +144,14 @@ while month <= month_nr
     puts sprintf "%02d/ -- Error {%s} --\n", searching.month, $!
   end
 
-  month = month + 1
+  month += 1
   searching = searching.next_month
 end
 
+=begin
+Memprof2.report
+Memprof2.stop
+
+rss = `ps -o rss= #{Process.pid}`.to_i
+puts "rss = #{rss}"
+=end
