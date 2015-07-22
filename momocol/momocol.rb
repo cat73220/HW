@@ -18,8 +18,8 @@ json = open("candidates.json", "r:utf-8").read
 $candidates_json = JSON.parse(json)
 $search_from_past = false
 
-base_uri = "http://www.bookservice.jp/layout/bs/common/html/schedule/"
-uri = base_uri + "comic_top.html"
+$base_uri = "http://www.bookservice.jp/layout/bs/common/html/schedule/"
+$uri = $base_uri + "comic_top.html"
 
 ARGV.each { |opt|
   if opt == "--search_from_past"
@@ -27,7 +27,7 @@ ARGV.each { |opt|
     next
   end
 
-  uri = opt if /^http:\/\/.*/ =~ opt
+  $uri = opt if /^http:\/\/.*/ =~ opt
 }
 
 def for_a_month( uri ) 
@@ -99,7 +99,11 @@ end
 
 if !$search_from_past
   puts "#{Date.today.year}"
-  for_a_month(uri)
+  begin
+    for_a_month($uri)
+  rescue
+    puts sprintf "%02d/ -- Error {%s} --\n", Date.today.month, $!
+  end
   exit
 end
 
@@ -118,8 +122,12 @@ month = 0
 while month <= month_nr
 
   puts "#{searching.year}" if month == 0
-  puts "\n#{searching.year}" if searching.month == 1
-  for_a_month( sprintf "%s%02d%02dc.html", base_uri, searching.year - 2000, searching.month )
+  puts "\n#{searching.year}" if searching.month == 1 and month > 0
+  begin
+    for_a_month( sprintf "%s%02d%02dc.html", $base_uri, searching.year - 2000, searching.month )
+  rescue
+    puts sprintf "%02d/ -- Error {%s} --\n", searching.month, $!
+  end
 
   month = month + 1
   searching = searching.next_month
