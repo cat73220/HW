@@ -24,6 +24,7 @@ Memprof2.start
 json = open("candidates.json", "r:utf-8").read
 $candidates_json = JSON.parse(json)
 $search_from_past = false
+$search_from_past_year_month = nil
 
 $base_uri = "http://www.bookservice.jp/layout/bs/common/html/schedule/"
 $uri = $base_uri + "comic_top.html"
@@ -31,6 +32,14 @@ $uri = $base_uri + "comic_top.html"
 ARGV.each { |opt|
   if opt == "--search_from_past"
     $search_from_past = true
+    next
+  end
+
+  if $search_from_past
+    if /[\d][\d][\d][\d]/ =~ opt
+      $search_from_past_year_month = $base_uri + opt + "c.html"
+      puts "#{$search_from_past_year_month}\n"
+    end
     next
   end
 
@@ -119,6 +128,15 @@ if !$search_from_past
   rss = `ps -o rss= #{Process.pid}`.to_i
   puts "rss = #{rss}"
 =end
+  exit
+end
+
+if $search_from_past_year_month
+  begin
+    for_a_month($search_from_past_year_month)
+  rescue
+    puts sprintf "%02d/ -- Error {%s} --\n", Date.today.month, $!
+  end
   exit
 end
 
