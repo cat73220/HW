@@ -33,6 +33,13 @@
     counter-increment: print_page_count;
 }
 
+.print_landscape_envelop {
+    width: 120mm;
+    height: 234mm;
+    page-break-after: always;
+    position: relative;
+}
+
 .print_1page:last-child {
     page-break-after: auto;
 }
