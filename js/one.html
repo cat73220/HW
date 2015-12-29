@@ -1,0 +1,14 @@
+<html><head>
+<script type="text/javascript">
+function submitForm() {
+  document.forms["ws2812"].submit();
+  window.location.reload();
+}
+</script>
+<title>Javascript test #1</title></head><body>
+<form name="ws2812">
+<input type=radio value="pattern" name="color" checked>パターン
+<input type=radio value="flat" name="color">全点灯
+<input type=button value="点灯" onclick="submitForm()">
+</form>
+</body></html>
