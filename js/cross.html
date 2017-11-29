@@ -1,0 +1,51 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>cross domain ajax</title></head><body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.xdomainajax.js"></script>
+<script type=text/javascript>
+$(function() {
+	$.ajax({
+		url: 'http://www.bookservice.jp/layout/bs/common/html/schedule/1609c.html',
+		type: 'GET',
+		success: function(data) {
+			$('#container').html(data.responseText);
+			$table = $('table', $('#container'));
+			$head = $('thead', $table);
+			$head_ths = $('th', $head);
+			$body_tds = $('td', $table);
+			$body_tds.each( function(i) {
+				if ($body_tds[i].textContent.match(/超人ロック|吾妻ひでお/)) {
+					$('#tds').append($body_tds[i].parentNode);
+				}
+			});
+			$('#body').html($head.html());
+			$('#body_length').append("<p>"+
+				$head_ths[1].innerHTML+","+
+				$head_ths[3].innerHTML+","+
+				$head_ths[4].innerHTML+","+
+				$head_ths[5].innerHTML+
+				"</p>");
+		}
+	});
+}); 
+</script> 
+</head>
+<body>
+<div id=body></div>
+<div id=body_length></div>
+<div id=container style=display:none;>container</div>
+<div id=tds></div>
+<!--
+<div id=stock></div>
+-->
+<!--
+<script>
+uri='http://www.yahoo.co.jp';
+$.get(uri, function(data) {
+	alert(data.responseText);
+});
+</script>
+ -->
+</body>
+</html>

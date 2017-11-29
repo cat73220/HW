@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>空間放射線量率</title>
+<link href="http://202.177.35.2/monitor/css/style.css" rel="stylesheet" type="text/css" />
+<link href="http://202.177.35.2/monitor/css/main.css" rel="stylesheet" type="text/css" />
+<link href="http://202.177.35.2/monitor/css/monitor.css" rel="stylesheet" type="text/css" />
+<link href="http://202.177.35.2/monitor/js/jquery.jqplot.css" rel="stylesheet" type="text/css" />
+<!--[if IE]><script type="text/javascript" src="http://202.177.35.2/monitor/js/excanvas.min.js"></script><![endif]-->
+
+<script type="text/javascript" src="http://202.177.35.2/monitor/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://202.177.35.2/monitor/js/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="http://202.177.35.2/monitor/js/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+<script type="text/javascript" src="http://202.177.35.2/monitor/js/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+<script type="text/javascript" src="http://202.177.35.2/monitor/js/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script type="text/javascript" src="http://202.177.35.2/monitor/js/plugins/jqplot.barRenderer.min.js"></script>
+<script type="text/javascript" src="http://202.177.35.2/monitor/js/plugins/jqplot.dateAxisRenderer.min.js"></script>
+<script type="text/javascript" src="http://202.177.35.2/monitor/js/plugins/jqplot.highlighter.min.js"></script>
+<script type="text/javascript" src="http://202.177.35.2/monitor/js/plugins/jqplot.cursor.min.js"></script>
+<script type="text/javascript" src="http://202.177.35.2/monitor/js/mm.js"></script>
+
+<script type="text/javascript">
+var line = [];
+line[1] = [['2013-05-13 00:00:00', 0.028],];
+line[11] = [['2013-05-13 00:00:00', 0.027],];
+line[16] = [['2013-05-07 00:00:00', 0.057],];
+line[17] = [['2013-05-13 00:00:00', 0.12],];
+line[18] = [['2013-05-12 00:00:00', 0.08],];
+line[19] = [['2013-05-12 00:00:00', 0.093],];
+line[20] = [];
+
+$(document).ready(function()
+{
+	$("#maps").show();
+	$.jqplot.config.enablePlugins = true;
+	
+	var plot = $.jqplot('chart', [line[1],line[11],line[16],line[17],line[18],line[19],line[20]], {
+		title: { text: '', show: false },
+		grid:{ shadow: false },
+		legend:{ show: false },
+		seriesDefaults: {
+			showMarker: true
+		},
+		seriesColors: ['#0000ff','#cc00ff','#006699','#663366','#996666','#669966','#cccc66'],
+		series:[ { label:'札幌市', lineWidth:1, markerOptions:{style:'filledCircle'} },{ label:'網走市', lineWidth:1, markerOptions:{style:'square'} },{ label:'台北', lineWidth:1, markerOptions:{style:'circle'} },{ label:'香港', lineWidth:1, markerOptions:{style:'square'} },{ label:'北京', lineWidth:1, markerOptions:{style:'diamond'} },{ label:'上海', lineWidth:1, markerOptions:{style:'filledCircle'} },{ label:'ソウル', lineWidth:1, markerOptions:{style:'filledSquare'} }, ],
+		cursor:{
+			show: false
+		},
+		axes:{
+			xaxis:{
+				renderer: $.jqplot.DateAxisRenderer,
+				rendererOptions:{tickRenderer:$.jqplot.CanvasAxisTickRenderer},
+				min:'2013-05-07 00:00:00',
+				max:'2013-05-13 00:00:00',
+				tickInterval:'1 day',
+				tickOptions:{
+					formatString:'%m/%d', fontSize:'9pt', fontWeight:'normal', fontStretch:1
+				}
+			},
+			yaxis:{
+				min:0,
+				max:0.5,
+				tickInterval:0.02,
+				tickOptions:{
+					formatString:'%.3f',fontSize:'8pt', fontWeight:'normal', fontStretch:1
+				}
+			}
+		}
+	});
+});
+
+
+</script>
+
+
+</head>
+
+<body onload="MM_preloadImages('http://202.177.35.2/monitor/images/top/b_jpn_f2.gif','http://202.177.35.2/monitor/images/top/b_eng_f2.gif','http://202.177.35.2/monitor/images/top/b_kan_f2.gif','http://202.177.35.2/monitor/images/top/b_han_f2.gif','http://202.177.35.2/monitor/images/top/b_kr_f2.gif')">
+
+<div id="wrapper">
+
+ <div id="hedder">
+ <a name="top" id="top"></a>
+ 
+  <div id="sitemap"><a href="http://www.scenicbyway.jp/site/site1.html" target="_top"><img src="http://202.177.35.2/monitor/images/top/b_sitemap.gif" alt="サイトマップ" width="69" height="20" border="0" /></a></div>
+  <div id="totop"><a href="http://www.scenicbyway.jp/index.html" target="_top"><img src="http://202.177.35.2/monitor/images/totop.jpg" alt="トップページへ" border="0" /></a></div>
+  </div>
+  
+ <div id="main">
+ 
+  <div id="mon-contents">
+    <div class="line02"></div>
+    <div id="pan">
+      <div style="text-align:right; margin-right:20px"><a href="http://www.scenicbyway.jp/index.html" target="_top">トップページ</a> &gt; 空間放射線量率測定結果 </div>
+    </div>
+  
+
+<h2>空間放射線量率</h2>
+
+<div style="text-align:right; margin-right:50px;">
+<a href="../jp/?graph"><img src="http://202.177.35.2/monitor/images/top/b_jpn.gif" alt="日本語" name="b_jpn" width="65" height="17" border="0" id="b_jpn" onmouseover="MM_swapImage('b_jpn','','http://202.177.35.2/monitor/images/top/b_jpn_f2.gif',1)" onmouseout="MM_swapImgRestore()" /></a>
+<a href="../?graph"><img src="http://202.177.35.2/monitor/images/top/b_eng.gif" alt="English" name="b_eng" width="74" height="17" border="0" onmouseover="MM_swapImage('b_eng','','http://202.177.35.2/monitor/images/top/b_eng_f2.gif',1)" onmouseout="MM_swapImgRestore()" /></a>
+<a href="../cn/?graph"><img src="http://202.177.35.2/monitor/images/top/b_kan.gif" alt="簡体字" name="b_kan" width="90" height="17" border="0" id="b_kan" onmouseover="MM_swapImage('b_kan','','http://202.177.35.2/monitor/images/top/b_kan_f2.gif',1)" onmouseout="MM_swapImgRestore()" /></a>
+<a href="../hk/?graph"><img src="http://202.177.35.2/monitor/images/top/b_han.gif" alt="繁体字" name="b_han" width="90" height="17" border="0" id="b_han" onmouseover="MM_swapImage('b_han','','http://202.177.35.2/monitor/images/top/b_han_f2.gif',1)" onmouseout="MM_swapImgRestore()" /></a>
+<a href="../kr/?graph"><img src="http://202.177.35.2/monitor/images/top/b_kr.gif" alt="韓国語" name="b_kr" width="41" height="17" border="0" id="b_kr" onmouseover="MM_swapImage('b_kr','','http://202.177.35.2/monitor/images/top/b_kr_f2.gif',1)" onmouseout="MM_swapImgRestore()" /></a>
+</div>
+
+<div class="chart_data">
+<p style="float:left; font-size: 15px"><a href="?index">空間放射線量率測定結果　トップへ</a></p>
+<p style="float:right"><br />
+単位　マイクロシーベルト/時間（&micro;Sv/h）<br />（注）一部データは1&micro;Gy/h≒1&micro;Sv/hとして表示</p>
+<br style="clear:both" />
+</div>
+
+<div id="maps" style="display:none;">
+<div id="chart" style="margin:20px 20px 20px 20px; width:740px; height:400px;"></div>
+</div>
+
+<noscript>
+<p style="text-align:center;margin:100px 100px;">グラフを表示するには、お使いのブラウザのJavaScript機能を有効にしてください。</p>
+</noscript>
+
+<div style="margin-left: 500px">
+単位　マイクロシーベルト/時間（&micro;Sv/h）<br />
+（注）一部データは1&micro;Gy/h≒1&micro;Sv/hとして表示<br />
+</div>
+
+<div class="chart_data">
+<table border="1" cellspacing="0" cellpadding="0" class="mon-tbl">
+<tr>
+<th style="width:16%;">-</th>
+<th style="width:12%;">05/07</th>
+<th style="width:12%;">05/08</th>
+<th style="width:12%;">05/09</th>
+<th style="width:12%;">05/10</th>
+<th style="width:12%;">05/11</th>
+<th style="width:12%;">05/12</th>
+<th style="width:12%;">05/13</th>
+</tr>
+
+<tr style="background-color:">
+<td style="text-align:left; padding-left:5px;"><span style="color:#0000ff;">■</span>&nbsp;札幌市</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">0.028</td>
+</tr>
+<tr style="background-color:#ffffff">
+<td style="text-align:left; padding-left:5px;"><span style="color:#cc00ff;">■</span>&nbsp;網走市</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">0.027</td>
+</tr>
+<tr style="background-color:#ffffe0">
+<td style="text-align:left; padding-left:5px;"><span style="color:#006699;">■</span>&nbsp;台北</td>
+<td style="text-align:center">0.057</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr style="background-color:#ffffe0">
+<td style="text-align:left; padding-left:5px;"><span style="color:#663366;">■</span>&nbsp;香港</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">0.120</td>
+</tr>
+<tr style="background-color:#ffffe0">
+<td style="text-align:left; padding-left:5px;"><span style="color:#996666;">■</span>&nbsp;北京</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">0.080</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr style="background-color:#ffffe0">
+<td style="text-align:left; padding-left:5px;"><span style="color:#669966;">■</span>&nbsp;上海</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">0.093</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr style="background-color:#ffffe0">
+<td style="text-align:left; padding-left:5px;"><span style="color:#cccc66;">■</span>&nbsp;ソウル</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+</table>
+
+
+  </div>
+
+
+<div style="width: 750px; margin: 20px 0;">
+<ul>
+
+<li style="margin-bottom: 10px;">
+表示データの出典：<br />
+■札幌市　北海道立衛生研究所の空間放射線量率測定結果　（<a href="http://www.iph.pref.hokkaido.jp/eiken_housyanou/eiken_housyanou.htm" target="_blank">リンク</a>）<br />
+■札幌市　多言語情報サイト（<a href="http://www.city.sapporo.jp/foreign/" target="_blank">リンク</a>）<br />
+■札幌市以外の都市　北海道庁での空間放射線量率モニタリング結果　（<a href="http://www.pref.hokkaido.lg.jp/sm/gat/zenndoumonita.htm" target="_blank">リンク</a>）<br />
+■シンガポール　シンガポール環境庁　（<a href="http://app2.nea.gov.sg/index.aspx" target="_blank">リンク</a>）<br />
+■台北　台湾原子力委員会　（<a href="http://203.69.102.242/gammadetect.php" target="_blank">リンク</a>）<br />
+■香港　香港天文台　（<a href="http://www.hko.gov.hk/radiation/ermp/rmn/applet/map/rmn_hourly_e.htm" target="_blank">リンク</a>）<br />
+■北京、上海　中国環境保護部　（<a href="http://haq.mep.gov.cn/gzdt/" target="_blank">リンク</a>）<br />
+■ソウル　韓国原子力安全技術院　（<a href="http://www.kins.re.kr/" target="_blank">リンク</a>）<br />
+</li>
+
+<li style="margin-bottom: 10px;">
+外国データは、現地時間でなく日本時間標記に変更しております。（GMT+9:00）<br />
+</li>
+
+</ul>
+</div>
+
+</div>
+
+
+ 
+ 
+ 
+ </div>
+
+ <div id="footer">
+   <div id="inquiry"><a href="http://www.scenicbyway.jp/inquiry/inquiry1.html" target="_top"><img src="http://202.177.35.2/monitor/images/b_inquiry.gif" alt="" width="115" height="18" border="0" /></a></div>
+   <div id="about_link"><a href="http://www.scenicbyway.jp/about_link/about_link1.html" target="_top"><img src="http://202.177.35.2/monitor/images/b_aboutlink.gif" alt="リンクについて" width="115" height="15" border="0" /></a></div>
+   <div id="site"><a href="http://www.scenicbyway.jp/site/site1.html" target="_top"><img src="http://202.177.35.2/monitor/images/b_site.gif" alt="このサイトについて" width="115" height="15" border="0" /></a></div>
+ </div>
+
+</div>
+
+</body>
+</html>
